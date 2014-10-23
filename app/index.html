@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en" >
+<head>
+  <meta charset="utf-8">
+  <title>UIM</title>
+  
+  <!-- 
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+   -->
+   
+  <link rel="stylesheet" href="css/app.css">
+  
+  <!-- 
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  -->
+  <script type="text/javascript" src="js/jquery-1.8.1.js"></script>
+	
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/angular-resource/angular-resource.js"></script>
+  <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+   
+	<style type="text/css">
+		.active{
+		font-weight: bold;
+		}
+	</style>
+   
+</head>
+
+<body ng-controller="ApplicationController" ng-app="uimApp">
+
+	<script type="text/javascript"></script>
+	<!-- 
+	<div login-dialog ng-if="!currentUser" next="users" uim-visible="!currentUser"></div>
+	<div login-dialog ng-if="!currentUser" uim-visible="!currentUser"></div>
+	 -->
+	 
+	<div class="wrapper">
+
+		<eu-menu-ops></eu-menu-ops>
+		<eu-logged-in></eu-logged-in>
+		
+		<div ui-view></div>
+		
+		<div class="push"></div>
+	</div>
+	
+	<div class="footer">
+		<span><a href="">Terms & Conditions</a></span> | <span><a href="">About</a></span> | <span><a href="">Contact</a></span>
+	</div>
+	
+	
+	<script src="js/app.js"></script>
+	<script src="js/controllers.js"></script>
+	<script src="js/services.js"></script>
+	<script src="js/directives.js"></script>
+	<script src="js/filters.js"></script>
+
+  
+</body>
+</html>

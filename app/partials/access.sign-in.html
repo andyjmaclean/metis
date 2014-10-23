@@ -1,0 +1,70 @@
+			<div class="cell">
+				
+				<form	class="login-form"
+						ng-controller="LoginController"
+						ng-submit="login(credentials)" novalidate>
+
+					<div class="tbl">
+						<div class="row">
+							<div class="cell">
+								
+								<input	type="text"
+										id="username"
+										placeholder="1=guest, 2=editor(CAS), blank=admin"
+										size="28"
+										ng-model="credentials.username" />
+							</div>
+						</div>
+						<div class="row">
+							<div class="cell">
+								<input	type="password"
+										id="password"
+										placeholder="password"
+										size="28"
+										ng-model="credentials.password" />
+							</div>
+						</div>
+						<div class="row">
+							<div class="cell">
+							
+								<input	type="hidden"
+										id="login-next"
+										name="login-next"
+										value="{{nextPage}}" />
+							
+								<input	type="hidden"
+										id="next-params"
+										name="next-params"
+										value="{{nextParams}}" />
+													
+								<button type="submit">Login</button>
+								<div class="vertical-line">&nbsp;</div>
+								<div class="forgotten-password"><a ui-sref="access.remind">Forgotten password</a></div>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+
+			<div class="cell vertical-line dashed">&nbsp;</div>
+
+			<div class="cell third-party-login">
+			
+				<div class="tbl">
+					<div class="row">
+						<div class="cell">
+							Google
+							<br/>
+							Facebook
+							<br/>
+							Etc.
+							<br/>
+						</div>
+					</div>
+				</div>
+			
+				<a ui-sref="access.sign-up">Register</a>
+			</div>
+
+
+

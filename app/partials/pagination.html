@@ -1,0 +1,82 @@
+
+<ul class="list-unstyled pages">
+
+  <!-- PREV -->
+
+  <li>
+  	<a ng-class="{'disabled': pparams.currentPage===1}"
+  	   ui-sref="{page:pparams.currentPage-1}">&#9664;</a>
+  </li>
+
+
+  <!-- NUMBERS -->
+
+<!-- 
+  <li ng-repeat="p in [0, pparams.noPages-1] | range: pparams.currentPage track by $index"
+      ng-class="{active:  p && p === pparams.currentPage}">
+      <a ng-if="p"
+         ui-sref="{page:p}" title="{{p}}">{{p}}</a>
+      <span ng-if="!p">...</span>
+  </li>
+ -->  
+ 
+  <li ng-repeat="p in [1, pparams.noPages] | range: pparams.currentPage:pparams.max track by $index"
+      ng-class="{active:  p && p === pparams.currentPage}">
+      <a ng-if="p"
+         ui-sref="{page:p}" title="{{p}}">{{p}}</a>
+      <span ng-if="!p">...</span>
+  </li>
+
+
+
+  <!-- NEXT -->
+  
+  <li>
+  	<a ng-class="{'disabled': pparams.currentPage == pparams.noPages}"
+  	   ui-sref="{page: pparams.currentPage+1}">&#9654;</a>
+  </li>
+
+</ul>  
+
+
+
+<!-- 
+<b>TODO</b>
+<ul>
+  <li>
+   	Data: ordering has to happen on the back end
+  </li>
+  <li>
+   	Presentation: limit the number of numbered page links to those grouped around the current, i.e.
+   	<br/>
+   	&nbsp;&nbsp; &larr; [209] [210] [211] [212] [213] [214] &rarr;
+  </li>
+  <li>
+   	Presentation / feature: include first and last links, i.e.
+   	<br/>
+   	&nbsp;&nbsp; &larr; &larr; [1] [2] [3] [4] [5] [6] &rarr; &rarr;
+  </li>
+</ul>
+
+<b>VARS</b>
+<ul>
+	<li>
+	{{ paginationParams.noPages }} (No. Pages)
+	</li>
+	<li>
+	{{paginationParams.currentPage}}  (currentPage)
+	</li>
+	<li>
+	{{paginationParams.url}} (load url)
+	</li>
+	<li>
+	{{paginationParams.total}} (total)
+	</li>
+	<li>
+	{{paginationParams.rows}} (rows)
+	</li>
+</ul>
+
+-->
+
+

@@ -1,0 +1,33 @@
+[
+  {
+    "id" : "1",
+    "name": "MIMO",
+    "location" : "Paris, France"
+  },
+  {
+    "id" : "2",
+    "name": "DPLA",
+    "location" : "Washington, USA"
+  },
+  {
+    "id" : "3",
+    "name": "Rijksmuseum",
+    "location" : "Amsterdam, Holland"
+  },
+  {
+    "id" : "4",
+    "name": "Hunterian",
+    "location" : "Glasgow, UK"
+  },
+  {
+    "id" : "5",
+    "name": "Kelvingrove",
+    "location" : "Glasgow, UK"
+  },
+  {
+    "id" : "6",
+    "name": "Trove",
+    "location" : "Canberra, Australia"
+  }
+]
+

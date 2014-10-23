@@ -1,0 +1,19 @@
+<style>
+	.eu-logged-in{
+		position: absolute;
+		margin: 1em 3em 0 1em;
+		top: 4em;
+		right: 0;
+	}
+</style>
+
+	<div ng-if="currentUser" class="eu-logged-in">
+		Welcome, {{ currentUser.name }}
+		<div ng-switch on="currentUser.role">
+		  <div ng-switch-when="admin">You're admin.</div>
+		  <div ng-switch-when="editor">You're editor.</div>
+		  <div ng-switch-when="guest">You're guest.</div>
+		  <div ng-switch-default>Unknow role</div>
+		</div>
+		<b>TODO: logout here</b>
+	</div>

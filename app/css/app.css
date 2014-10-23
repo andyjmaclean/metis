@@ -1,0 +1,263 @@
+
+/* Reset */
+
+* {
+	margin: 0;
+}
+
+html, body{
+	height: 100%;
+}
+
+body {
+	font-family:	"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size:		16px;
+}
+
+
+/* menu */
+
+.top-menu{
+	background-color:	#000;
+	color:				white;
+	height:				3.5em;	
+}
+
+.top-menu li{
+	display:			inline-block;
+
+	vertical-align: 	top;
+	word-wrap:			break-word;
+	padding:			0 0.75em 0 0.75em;
+	vertical-align: 	middle;
+}
+
+.top-menu li a{
+	color:				white;
+}
+
+.top-menu li img{
+	height:				2.8em;
+	outline:			none;
+	margin:				0.6em 0 0 0; 
+}
+
+.top-menu li:nth-child(n+3){
+	border-left: 1px solid #fff;
+}
+
+.top-menu li:nth-child(n+1){
+	font-size:			0.9em;
+}
+
+.top-menu li:nth-child(n+3){
+	border-left: 1px solid #fff;
+}
+
+
+/* footer */
+
+.wrapper {
+	min-height:	100%;
+	height:		auto !important;
+	height:		100%;
+	margin:		0 auto -3em;
+}
+
+.footer,
+.push {
+	height: 3em;
+}
+
+.footer{
+	margin:			0 auto;
+	position:		relative;
+	border:			1px solid #ccc;
+	padding:		0.25em;
+	line-height:	2.5em;
+	text-align:		center;
+}
+
+.footer span{
+	margin: 3em;
+}
+
+.footer span a{
+	color: #333;
+}
+
+
+/* layout */
+
+.tbl{
+	display:	table;
+	margin:		auto;
+}
+
+.row{
+	display:	table-row;
+}
+
+.cell{
+	display:	table-cell;
+}
+
+
+
+/* log-in */
+
+/*
+.forgotten-password,
+.login-form #username,
+.login-form #password,
+.login-form button[type=submit]{
+	margin-top:		1em;
+	line-height:	2em;
+	padding:		0 0.5em;
+}
+*/
+
+.forgotten-password,
+.register-form input,
+.register-form button[type=submit],
+.login-form input,
+.login-form button[type=submit],
+.reset-password-form input,
+.reset-password-form button[type=submit]{
+	margin-top:		1em;
+	line-height:	2em;
+	padding:		0 0.5em;
+}
+
+.register-form button[type=submit]{
+	margin-bottom: 2em;	
+}
+
+.vertical-line{
+    border-left:	1px solid #000;
+    display:		inline-block;
+    height:			2em;
+    margin:			0 2.5em;
+    position:		relative;
+    top:			-0.275em;
+}
+
+.vertical-line.dashed{
+    border-left:	1px dashed #000;
+    top:			-2em;
+    height:			12em;
+    
+}
+
+.forgotten-password{
+	display:		inline-block;
+	padding:		0;
+}
+
+
+.login-form button[type=submit]{
+	border-radius: 	0;
+	border:			1px solid #ccc;
+}
+
+.third-party-login .tbl{
+	line-height:	1.5em;
+	height:			6.5em;
+	min-height:		6.5em;
+}
+
+
+/* lists */
+/*
+ul.users,
+ul.organisations{
+  margin: 1.5em 0 2.5em 0;
+}
+*/
+ul{
+  list-style:	none;
+  margin:		0;
+  padding:		0;
+}
+
+ul.object-list{
+  XXXmargin: 1.5em 0 2.5em 1em;
+}
+
+.object-listing{
+  margin: 1.5em 0 2.5em 1em;
+}
+
+/* pagination */
+
+.pages{
+	display:		table;
+	table-layout:	fixed;
+	position:		relative;
+	margin:			auto;
+}
+
+.pages li{
+	display:		table-cell;
+	vertical-align:	middle;
+	text-align:		center;
+}
+
+.pages li.active{
+	font-weight:	bold;
+}
+
+.pages li a,
+.pages li span{
+	width:			2em;
+	height:			2em;
+	line-height:	2em;
+	display:		block;
+	border:			1px solid #ddd;
+	margin:			0.5em;
+}
+
+.pages li.active a,
+.pages li.active span{
+	border:			  1px solid #bbb;
+	background-color: #eee;
+}
+
+
+.pages li:first-child a,
+.pages li:last-child a{
+	line-height:	1.75em;	/* centre arrow icons */
+}
+
+.pages li a{
+	cursor:	pointer;
+	color:  #333;
+	text-decoration: none;
+}
+	
+.pages li a.disabled{
+	color:  #ccc;
+}
+
+
+.pages .disabled{
+	cursor:			not-allowed;
+    pointer-events:	none;
+}
+
+
+
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */

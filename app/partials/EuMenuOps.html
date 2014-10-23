@@ -1,0 +1,55 @@
+	
+	<ul ng-if="!currentUser" class="top-menu">
+		<li style="vertical-align: center;">
+			<img src="img/europeana-logo-white.png">
+		</li>
+
+		<li>
+	    	Europeana Ingestion Tools
+		</li>
+	</ul>
+	
+	<ul ng-if="currentUser" class="top-menu">
+		<li style="vertical-align: center;">
+			<img src="img/europeana-logo-white.png">
+		</li>
+		<li>
+			<a href="">Data reports</a>
+		</li>
+		<li>
+			<a href="">Upload dataset</a>
+		</li>
+	</ul>
+	
+	
+	
+
+	<ul ng-if="currentUser" style="margin-left: 1em;">
+	  <li>
+		<home-link></home-link>
+	  </li>
+	  <li>
+	    <a ui-sref="organisations.list({page:1})">Organisations List</a>
+	  </li>
+	  <li>
+	    <a ui-sref="organisations.admin({page:1})">Organisations Admin</a>
+	  </li>
+	  <li>
+	    <a href="#/projects">Projects</a>
+	  </li>
+
+	  <li>
+	    <a ui-sref="users.list({page:1})" ui-sref-active="active">Users List</a>
+	  </li>
+	  
+	  
+	  <li>
+	    <a ui-sref="users.admin({page:1})" ui-sref-active="active">Users Admin</a>
+	  </li>
+	  <li>
+	    <a ui-sref="users.guest({page:1})" ui-sref-active="active">Users Guest</a>
+	  </li>	  
+	  <li>
+	    <a ui-sref="users.guest.sub">Users Guest Sub</a>
+	  </li>
+	</ul>

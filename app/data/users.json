@@ -1,0 +1,109 @@
+[
+    {
+        "id": 9,
+        "fullname": "Andy MacLean",
+        "email": "andyjmaclean@gmail.com",
+        "casid": 12,
+        "active": true,
+        "access": [
+            {
+                "role": "officer||officer"
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "fullname": "Dumy viewer",
+        "email": "125@aaa.com",
+        "casid": 11,
+        "active": false,
+        "access": [
+            {
+                "organization_id": 1,
+                "sugarorg_id": "5f6ff233-8147-c19d-d2e9-4c585f0204cb",
+                "role": "viewer"
+            },
+            {
+                "organization_id": 2,
+                "sugarorg_id": "83094dd5-8c42-cd3c-7e49-4c585f7a01e2",
+                "role": "provider"
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "fullname": "Dumy viewer",
+        "email": "124@aaa.com",
+        "casid": 10,
+        "active": false,
+        "access": [
+            {
+                "organization_id": 1,
+                "sugarorg_id": "5f6ff233-8147-c19d-d2e9-4c585f0204cb",
+                "role": "viewer"
+            },
+            {
+                "organization_id": 2,
+                "sugarorg_id": "83094dd5-8c42-cd3c-7e49-4c585f7a01e2",
+                "role": "provider"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "fullname": "Dumy viewer",
+        "email": "123@aaa.com",
+        "casid": 9,
+        "active": false,
+        "access": [
+            {
+                "organization_id": 2,
+                "sugarorg_id": "83094dd5-8c42-cd3c-7e49-4c585f7a01e2",
+                "role": "provider"
+            },
+            {
+                "organization_id": 1,
+                "sugarorg_id": "5f6ff233-8147-c19d-d2e9-4c585f0204cb",
+                "role": "viewer"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "fullname": "Dumy officer",
+        "email": "officer@gmail.com",
+        "casid": 8,
+        "active": false,
+        "access": [
+            {
+                "role": "officer"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "fullname": "Dimitra Atsidis",
+        "email": "dimitra@europeana.eu",
+        "casid": 2,
+        "active": true,
+        "access": [
+            {
+                "role": "officer"
+            }
+        ]
+    },
+    {
+        "id": 1,
+        "fullname": "Anna Christaki",
+        "email": "annachristaki@gmail.com",
+        "casid": 1,
+        "active": true,
+        "access": [
+            {
+                "organization_id": 2,
+                "sugarorg_id": "83094dd5-8c42-cd3c-7e49-4c585f7a01e2",
+                "role": "viewer"
+            }
+        ]
+    }
+]
