@@ -1,4 +1,6 @@
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/andyjmaclean/metis.svg)](https://greenkeeper.io/)
+
 DEVELOPMENT SET-UP
 
 
