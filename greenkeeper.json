@@ -1,0 +1,13 @@
+{
+  "groups": {
+    "default": {
+      "packages": [
+        "app/bower_components/bootstrap/package.json",
+        "app/bower_components/jquery/package.json",
+        "bower_components/bootstrap/package.json",
+        "bower_components/jquery/package.json",
+        "package.json"
+      ]
+    }
+  }
+}
